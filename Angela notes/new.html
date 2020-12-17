@@ -5,86 +5,62 @@
     <title>How to make horizontal
         scrollable in a bootstrap row?</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      body{
-        color:white;
-      }
-        /* The heart of the matter */
-        .check {
-            width: 100%;
-            height: 650px;
-            background-color: blue;
-        }
-
-        .horizontal-scrollable>.row {
-            overflow-x: auto;
+        div.scrollmenu {
+            overflow: auto;
             white-space: nowrap;
         }
 
-        .horizontal-scrollable>.row>.check {
+        div.scrollmenu a {
             display: inline-block;
-            float: none;
-        }
-        .horizontal-scrollable>.row>.check2 {
-            display: inline-block;
-            float: none;
-        }
-        #bottom{
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
             margin-top:10px;
         }
-        /* Decorations */
 
-        .col-xs-4 {
-            color: white;
-            font-size: 24px;
-            padding-bottom: 20px;
-            padding-top: 18px;
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+        div.scrollmenu div {
+            display: inline-block;
+            width:100%;
+            height:650px;
         }
 
-        .col-xs-4:nth-child(2n+1) {
-            background: green;
-        }
-
-        .col-xs-4:nth-child(2n+2) {
-            background: black;
-        }
     </style>
 </head>
 
 <body>
     <center>
-
-        <div class="container horizontal-scrollable">
-            <div class="row text-center text-light ">
-                <div id="1" class="check">1</div>
-                <div id="2" class="check">2</div>
-                <div id="3" class="check">3</div>
-                <div id="4" class="check">4</div>
-                <div id="5" class="check">5</div>
-                <div id="6" class="check">6</div>
-                <div id="7" class="check">7</div>
-                <div id="8" class="check">8</div>
-                <div id="9" class="check">9</div>
-                <div id="10" class="check">10</div>
+        
+        <div class="scrollmenu">
+            <div id="1" class="btn btn-danger">
+            <div class="display-1">Display-1</div>
             </div>
+            <div id="2" class="btn btn-danger">day2</div>
+            <div id="3" class="btn btn-danger">day3</div>
+            <div id="4" class="btn btn-danger">day4</div>
+            <div id="5" class="btn btn-danger">day5</div>
+            <div id="6" class="btn btn-danger">day6</div>
+            <div id="7" class="btn btn-danger">day7</div>
+            <div id="8" class="btn btn-danger">day8</div>
+            <div id="9" class="btn btn-danger">day9</div>
+            <div id="10" class="btn btn-danger">day10</div>
+        </div>
+        <div class="scrollmenu">
+            <a href="#1" class="btn btn-danger">day1</a>
+            <a href="#2" class="btn btn-danger">day2</a>
+            <a href="#3" class="btn btn-danger">day3</a>
+            <a href="#4" class="btn btn-danger">day4</a>
+            <a href="#5" class="btn btn-danger">day5</a>
+            <a href="#6" class="btn btn-danger">day6</a>
+            <a href="#7" class="btn btn-danger">day7</a>
+            <a href="#8" class="btn btn-danger">day8</a>
+            <a href="#9" class="btn btn-danger">day9</a>
+            <a href="#10" class="btn btn-danger">day10</a>
+            <a href="#10" class="btn btn-danger">day10</a>
         </div>
     </center>
-    <div class="container horizontal-scrollable" id="bottom">
-        <div class="row text-center">
-            <a href="#1" class="btn btn-primary check2">day1</a>
-            <a href="#2" class="btn btn-primary check2">day2</a>
-            <a href="#3" class="btn btn-primary check2">day3</a>
-            <a href="#4" class="btn btn-primary">day4</a>
-            <a href="#5" class="btn btn-primary check2">day5</a>
-            <a href="#6" class="btn btn-primary check2">day6</a>
-            <a href="#7" class="btn btn-primary check2">day7</a>
-            <a href="#8" class="btn btn-primary check2">day8</a>
-            <a href="#9" class="btn btn-primary check2">day9</a>
-            <a href="#10" class="btn btn-primary check2">day10</a>
-        </div>
-    </div>
 </body></html> 
