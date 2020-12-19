@@ -5,10 +5,13 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="JS/all.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
     <style>
         * {
 
@@ -22,9 +25,10 @@
         .left{
             float: right;
             width: 20%;
-            height:650px;
+            height:700px;
             overflow:auto;
             position:fixed;
+            top:47px;
             right:2px;
         }
         div.scrollmenu {
@@ -48,57 +52,160 @@
             background-image: url("images/pexels-spacex-23775.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: 500px 100%;
+            background-size: 80% 100%;
         }
 
         #backtotop {
             position: fixed;
-            top: 75px;
-            right: 1px;
+            top: 5px;
+            right:6px;
+        }
+        
+        .w{
+            width:69px;
+        }
+        .box{
+            width:100%;
+            border:1px solid black;
+            height:746px;
+            position: relative;
+        }
+        
+        .footer{
+            border:1px solid black;
+            width:100%;
+            height:70px;
+            position: absolute;
+            bottom:1px;
+        }
+        .footer:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .right_1{
+            border:1px solid black;
+            float:right;float:5
+        }
+        .left_1{
+            border:1px solid black;
+            float: left;
         }
     </style>
 </head>
 
 <body>
-    <div class="display-1" id="top">Display</div>
+    
     <div class="right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <div id="4">
-        <h1>i am 4</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p></div>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum dignissimos pariatur repudiandae quo, fuga aut adipisci ab enim a, cum aperiam quod illo, culpa non nobis sed doloribus ea.</p>
+       <div class="display-1" id="top">100 days</div>
+       <p class="lead">- Angela Yu</p>
+<!--        .box#$*30>h1{Day$}-->
+       <div class="box" id="1">
+           <h1>Day1</h1>
+           <div class="right_1">
+               
+           </div>
+           <div class="left_1">
+               
+           </div>
+           <div class="footer"></div>
+       </div>
+       <div class="box" id="2">
+           <h1>Day2</h1>
+       </div>
+       <div class="box" id="3">
+           <h1>Day3</h1>
+       </div>
+       <div class="box" id="4">
+           <h1>Day4</h1>
+       </div>
+       <div class="box" id="5">
+           <h1>Day5</h1>
+       </div>
+       <div class="box" id="6">
+           <h1>Day6</h1>
+       </div>
+       <div class="box" id="7">
+           <h1>Day7</h1>
+       </div>
+       <div class="box" id="8">
+           <h1>Day8</h1>
+       </div>
+       <div class="box" id="9">
+           <h1>Day9</h1>
+       </div>
+       <div class="box" id="10">
+           <h1>Day10</h1>
+       </div>
+       <div class="box" id="11">
+           <h1>Day11</h1>
+       </div>
+       <div class="box" id="12">
+           <h1>Day12</h1>
+       </div>
+       <div class="box" id="13">
+           <h1>Day13</h1>
+       </div>
+       <div class="box" id="14">
+           <h1>Day14</h1>
+       </div>
+       <div class="box" id="15">
+           <h1>Day15</h1>
+       </div>
+       <div class="box" id="16">
+           <h1>Day16</h1>
+       </div>
+       <div class="box" id="17">
+           <h1>Day17</h1>
+       </div>
+       <div class="box" id="18">
+           <h1>Day18</h1>
+       </div>
+       <div class="box" id="19">
+           <h1>Day19</h1>
+       </div>
+       <div class="box" id="20">
+           <h1>Day20</h1>
+       </div>
+       <div class="box" id="21">
+           <h1>Day21</h1>
+       </div>
+       <div class="box" id="22">
+           <h1>Day22</h1>
+       </div>
+       <div class="box" id="23">
+           <h1>Day23</h1>
+       </div>
+       <div class="box" id="24">
+           <h1>Day24</h1>
+       </div>
+       <div class="box" id="25">
+           <h1>Day25</h1>
+       </div>
+       <div class="box" id="26">
+           <h1>Day26</h1>
+       </div>
+       <div class="box" id="27">
+           <h1>Day27</h1>
+       </div>
+       <div class="box" id="28">
+           <h1>Day28</h1>
+       </div>
+       <div class="box" id="29">
+           <h1>Day29</h1>
+       </div>
+       <div class="box" id="30">
+           <h1>Day30</h1>
+       </div>
     </div>
     <div class="left">
-        <a href="#1" class="btn btn-outline-dark bg-dark text-light ">day1</a>
-        <a href="#2" class="btn btn-outline-dark bg-dark text-light ">day2</a>
-        <a href="#3" class="btn btn-outline-dark bg-dark text-light ">day3</a>
-        <a href="#4" class="btn btn-outline-dark bg-dark text-light ">day4</a>
-        <a href="#5" class="btn btn-outline-dark bg-dark text-light ">day5</a>
-        <a href="#6" class="btn btn-outline-dark bg-dark text-light ">day6</a>
-        <a href="#7" class="btn btn-outline-dark bg-dark text-light ">day7</a>
-        <a href="#8" class="btn btn-outline-dark bg-dark text-light ">day8</a>
-        <a href="#9" class="btn btn-outline-dark bg-dark text-light ">day9</a>
+        <a href="#1" class="btn btn-outline-dark bg-dark text-light w">day1</a>
+        <a href="#2" class="btn btn-outline-dark bg-dark text-light w">day2</a>
+        <a href="#3" class="btn btn-outline-dark bg-dark text-light w">day3</a>
+        <a href="#4" class="btn btn-outline-dark bg-dark text-light w">day4</a>
+        <a href="#5" class="btn btn-outline-dark bg-dark text-light w">day5</a>
+        <a href="#6" class="btn btn-outline-dark bg-dark text-light w">day6</a>
+        <a href="#7" class="btn btn-outline-dark bg-dark text-light w">day7</a>
+        <a href="#8" class="btn btn-outline-dark bg-dark text-light w">day8</a>
+        <a href="#9" class="btn btn-outline-dark bg-dark text-light w">day9</a>
         <a href="#10" class="btn btn-outline-dark bg-dark text-light ">day10</a>
         <a href="#11" class="btn btn-outline-dark bg-dark text-light ">day11</a>
         <a href="#12" class="btn btn-outline-dark bg-dark text-light ">day12</a>
@@ -108,24 +215,17 @@
         <a href="#16" class="btn btn-outline-dark bg-dark text-light ">day16</a>
         <a href="#17" class="btn btn-outline-dark bg-dark text-light ">day17</a>
         <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
-        <a href="#11" class="btn btn-outline-dark bg-dark text-light ">day11</a>
-        <a href="#12" class="btn btn-outline-dark bg-dark text-light ">day12</a>
-        <a href="#13" class="btn btn-outline-dark bg-dark text-light ">day13</a>
-        <a href="#14" class="btn btn-outline-dark bg-dark text-light ">day14</a>
-        <a href="#15" class="btn btn-outline-dark bg-dark text-light ">day15</a>
-        <a href="#16" class="btn btn-outline-dark bg-dark text-light ">day16</a>
-        <a href="#17" class="btn btn-outline-dark bg-dark text-light ">day17</a>
+
         <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
-        <a href="#11" class="btn btn-outline-dark bg-dark text-light ">day11</a>
-        <a href="#12" class="btn btn-outline-dark bg-dark text-light ">day12</a>
-        <a href="#13" class="btn btn-outline-dark bg-dark text-light ">day13</a>
-        <a href="#14" class="btn btn-outline-dark bg-dark text-light ">day14</a>
-        <a href="#15" class="btn btn-outline-dark bg-dark text-light ">day15</a>
-        <a href="#16" class="btn btn-outline-dark bg-dark text-light ">day16</a>
-        <a href="#17" class="btn btn-outline-dark bg-dark text-light ">day17</a>
         <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
+        <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
+        <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>        
     </div>
-    <a href="#top" class="btn btn-primary" id="backtotop">Back to top</a>
-</body></html> 
+    <a href="#top" class="btn btn-primary" id="backtotop">To top</a>
+    
    
+  
+</body>
+</html> 
+    
     
