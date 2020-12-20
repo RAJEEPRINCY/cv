@@ -22,6 +22,11 @@
             text-align: center
         }
 
+        body {
+            background-color:#343a40;
+            color: #e9ecef
+        }
+
         .right {
             float: left;
             width: 80%;
@@ -52,19 +57,32 @@
             margin-top: 2px;
         }
 
-        h1,h2,h3,h4,h6,h4,p,.display-2{
+        h1,
+        h2,
+        h3,
+        h4,
+        h6,
+        h4,
+        p,
+        .display-2 {
             color: white;
             text-shadow: 2px 2px 4px #000000;
         }
 
-        body {
-            background-image: url("images/drip-3875270_1920.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 80% 710px;
-            color: #e9ecef
+        .p {
+            color:#ffa200;
         }
 
+        .o {
+            color: #00ff00;
+        }
+
+        .n {
+            color:#1e96fc
+        }
+        .left_1 h6{
+            color:#f7047a
+        }
         #backtotop {
             position: fixed;
             top: 5px;
@@ -78,14 +96,14 @@
         .box {
             width: 100%;
             border: 1px solid black;
-            height: 746px;
+            height: 710px;
             position: relative;
         }
 
         .footer {
             border: 1px solid black;
             width: 100%;
-            height: 70px;
+            height: 50px;
             position: absolute;
             bottom: 1px;
         }
@@ -111,8 +129,21 @@
             height: 600px;
             margin-left: 10px;
         }
-        .little{
-            margin-top:30px; 
+
+        .little {
+            margin-top: 30px;
+        }
+
+        .footer-left {
+            float: left;
+            width: 60%;
+            margin-top: 10px;
+        }
+
+        .footer-right {
+            float: right;
+            width: 35%;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -124,32 +155,49 @@
         <p class="lead">- Angela Yu</p>
         <!--        .box#$*30>h1{Day$}-->
         <div class="box" id="1">
-            <h1>Day1</h1>
-            
+            <h2>Day1</h2>
+
             <div class="left_1"><br>
                 <h6>Print</h6><br><br>
                 <h6>String Manipulation</h6>
-                <br><br><br><br><h6>String concatenation</h6><br>
-                <h6>Input ()</h6><br><h6>Variables</h6><br><br><br>
-                <br><h6>Variables Naming</h6>
+                <br><br><br><br>
+                <h6>String concatenation</h6><br>
+                <h6>Input ()</h6><br>
+                <h6>Variables</h6><br><br><br>
+                <br>
+                <h6>Variables Naming</h6>
             </div>
             <div class="right_1"><br>
-                <p>print("Print something")<br>>>Print something</p>
-                <p>String manipulation (or string handling) is the process of <b>changing, parsing, splicing, pasting, or analyzing</b> strings</p><p>print("Hello" + "Rajesh")<br>>>Hello Rajesh</p><div class="little"></div><p>input("Enter your name") <br>>>Enter your name</p><p>name=input("Your name") <br>>>Your name Rajesh <br>print(name) <br>>>Rajesh</p><p><b>Use only: </b>A-z, 0-9, _ </p>
-                <p><b>Don't Use : </b>(!@#$%^&*?>&#60;)) </p>
+                <p class="p">print("Print something")<br><span class="o">>Print something></span></p>
+                <p class="n">"String manipulation (or string handling) is the process of <b>changing, parsing, splicing, pasting, or analyzing</b> strings"</p>
+                <p class="p">print("Hello" + "Rajesh")<br><span class="o">>>Hello Rajesh</span></p>
+                <div class="little"></div>
+                <p class="p">input("Enter your name") <br><span class="o">>>Enter your name</span></p>
+                <p class="p">name=input("Your name") <br><span class="o">>>Your name Rajesh </span><br>print(name) <br><spean class="o">>>Rajesh</spean></p>
+                <p class="n"><b>Use only: </b>A-z, 0-9, _ </p>
+                <p class="n"><b>Don't Use : </b>(!@#$%^&*?>&#60;)) </p>
             </div>
-            <div class="footer"></div>
+            <div class="footer">
+                <div class="footer-left">
+                    <h5>Band Naming :</h5>
+                </div>
+                <div class="footer-right">
+                    <a href="https://repl.it/@rajeerocky/dayt-1-band-game/?embed=1&output=1#main.py" class="btn btn-outline-warning btn-sm">Output</a>
+                </div>
+
+            </div>
         </div>
-        <div class="box" id="1">
-            <h1>Day1</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
+
         <div class="box" id="2">
-            <h1>Day2</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
+            <h2>Day2</h2>
+            <div class="left_1"><br>
+                <h6>Data Types :</h6><br><br>
+                <h6 style="color: red">Type Error :</h6>
+            </div>
+            <div class="right_1"><br>
+                <p class="n">String , Integer , Float , Boolean</p>
+                <p> <span class="n">"when a value is not of the expected type. "</span><br><span class="p">no=int(input(" No :")) <br> print("no is " + no) <br></span><span class="o">>></span><span style="color: red">Type Error :</span></p>
+            </div>
             <div class="footer"></div>
         </div>
         <div class="box" id="3">
@@ -352,5 +400,4 @@
 
 
 </body></html> 
-    
     
