@@ -16,45 +16,46 @@
     
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        * {
-
+   <style>
+        body {
+            background-color: #343a40;
+            color: #e9ecef;
             text-align: center
         }
 
-        body {
-            background-color:#343a40;
-            color: #e9ecef
-        }
-
-        .right {
+        .box {
             float: left;
-            width: 80%;
+            width: 100%;
         }
 
-        .left {
-            float: right;
-            width: 20%;
-            height: 700px;
-            overflow: auto;
+
+        .scrollmenu {
+            width: 100%;
+            height: 60px;
             position: fixed;
-            top: 47px;
-            right: 2px;
+            bottom: 0px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+
         }
+
 
         div.scrollmenu {
-            border: 1px solid black;
+            background-color: #333;
             overflow: auto;
             white-space: nowrap;
-
         }
 
         div.scrollmenu a {
             display: inline-block;
+            color: white;
             text-align: center;
-            padding: 12px;
             text-decoration: none;
-            margin-top: 2px;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
         }
 
         h1,
@@ -69,43 +70,37 @@
             text-shadow: 2px 2px 4px #000000;
         }
 
-        .p {
-            color:#ffa200;
+        .b {
+            color: #1e96fc
         }
 
         .o {
+            color: #ffa200;
+        }
+
+        .g {
             color: #00ff00;
         }
 
-        .n {
-            color:#1e96fc
-        }
-        .left_1 h6{
-            color:#f7047a
-        }
-        #backtotop {
-            position: fixed;
-            top: 5px;
-            right: 6px;
-        }
 
-        .w {
-            width: 69px;
+        .left_1 h6 {
+            color: #f7047a
         }
 
         .box {
             width: 100%;
-            border: 1px solid black;
             height: 710px;
             position: relative;
         }
 
         .footer {
             border: 1px solid black;
-            width: 100%;
+            width: 94%;
+            margin-left: 3%;
             height: 50px;
+            padding-top: 1%;
             position: absolute;
-            bottom: 1px;
+            bottom: 60px;
         }
 
         .footer:hover,
@@ -117,287 +112,245 @@
         .right_1 {
             border: 1px solid black;
             float: right;
-            width: 60%;
-            height: 600px;
+            width: 67%;
+            height: 530px;
             margin-right: 10px;
+            text-align: left;
         }
 
         .left_1 {
             border: 1px solid black;
             float: left;
-            width: 30%;
-            height: 600px;
+            width: 25%;
+            height: 530px;
             margin-left: 10px;
         }
 
-        .little {
-            margin-top: 30px;
+        .hr {
+            width: 100%;
+            height: 1px;
+            border-top: 1px solid black;
         }
 
-        .footer-left {
-            float: left;
-            width: 60%;
-            margin-top: 10px;
+        .scrolling {
+            overflow: auto;
+            white-space: nowrap;
+            margin: 0 10px;
         }
 
-        .footer-right {
-            float: right;
-            width: 35%;
-            margin-top: 10px;
+        hr {
+            margin: 10px 6px;
+            border: 1px solid white;
+        }
+
+        p {
+            margin-left: 5px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="right">
-        <div class="display-2" id="top">100 days</div>
+    <div class="box">
+        <div class="display-2" id="top">React.js</div>
         <p class="lead">- Angela Yu</p>
+        <div class="hr"></div>
         <!--        .box#$*30>h1{Day$}-->
         <div class="box" id="1">
-            <h2>Day1</h2>
+            <h1>1.React.js
+            </h1>
 
             <div class="left_1"><br>
-                <h6>Print</h6><br><br>
-                <h6>String Manipulation</h6>
-                <br><br><br><br>
-                <h6>String concatenation</h6><br>
-                <h6>Input ()</h6><br>
-                <h6>Variables</h6><br><br><br>
-                <br>
-                <h6>Variables Naming</h6>
+                <h6>Intro :</h6><br>
+                <p></p>
+                <h6>Code sandbox</h6><br>
+                <h6>h1</h6><br><br><br>
+                <p></p>
+                <h6>Multiple Tag</h6><br><br><br>
+                <h6>Adding:</h6><br><br>
+                <h6>Also can do this</h6>
             </div>
             <div class="right_1"><br>
-                <p class="p">print("Print something")<br><span class="o">>Print something></span></p>
-                <p class="n">"String manipulation (or string handling) is the process of <b>changing, parsing, splicing, pasting, or analyzing</b> strings"</p>
-                <p class="p">print("Hello" + "Rajesh")<br><span class="o">>>Hello Rajesh</span></p>
-                <div class="little"></div>
-                <p class="p">input("Enter your name") <br><span class="o">>>Enter your name</span></p>
-                <p class="p">name=input("Your name") <br><span class="o">>>Your name Rajesh </span><br>print(name) <br><spean class="o">>>Rajesh</spean></p>
-                <p class="n"><b>Use only: </b>A-z, 0-9, _ </p>
-                <p class="n"><b>Don't Use : </b>(!@#$%^&*?>&#60;)) </p>
-            </div>
-            <div class="footer">
-                <div class="footer-left">
-                    <h5>Band Naming :</h5>
+                <p class="b">A javascript library for building user interface </p>
+                <p class="b">Online IDE for React</p>
+                <br>
+                <div class="scrolling">
+                    <p class="o" style="text-align: left;">
+                        import <span class="g">React</span> from <span class="g">"react"</span> <br>
+                        import <span class="g">ReactDom</span> from <span class="g">"react-dom"</span>
+                    </p>
+                    <p style="text-align: left;" class="o">ReactDom.render(<span class="g">&#60;h1>Hello world!&#60;/h1></span>,<span>document. getElementById( <span class="g">"root"</span> )</span>);
+                    </p>
                 </div>
-                <div class="footer-right">
-                    <a href="https://repl.it/@rajeerocky/dayt-1-band-game/?embed=1&output=1#main.py" class="btn btn-outline-warning btn-sm">Output</a>
+                <p></p>
+                <div class="scrolling">
+                    <p style="text-align: left;" class="o">ReactDom.render(&#60;div> <br>
+                        &emsp;<span class="g">&#60;h1>Hello world&#60;/h1></span> <br>
+                        &emsp;<span class="g">&#60;p>Some text&#60;/p>&#60;/div></span> <br>
+                        ,<span>document. getElementById( <span class="g">"root"</span> )</span>);</p>
+                </div>
+                <p></p>
+                <p style="text-align: left;" class="scrolling">
+                    <span class="o">const <span class="b">name</span></span><span class="o">=</span><span class="g">"Rajesh";</span><br>
+                    <span class="o">ReactDom.render(<span class="g">&#60;h1>Hello <span class="b">{name}</span>!&#60;/h1></span>,<span>document. getElementById( <span class="g">"root"</span> )</span>);
+                    </span>
+                </p><br>
+                <div class="scrolling">
+                    <p><span class="b">&#60;h1>Your Id : { <span class="g"><span class="o">Math.</span><span class="g">floor</span>(<span class="o">Math.</span><span class="g">random</span><span class="b">*</span><span class="o">10</span>)</span> }!&#60;/h1></span>,<span>document. getElementById( <span class="b">"root"</span> )</span>);</p>
                 </div>
 
+            </div>
+            <div class="footer">
+                <a href="https://codesandbox.io/dashboard/home?workspace=ba220f2d-3a84-46fb-8c18-7cb1a21db976" class="btn btn-outline-warning">CodeSandBox</a>
+                <a href="https://babeljs.io/" class="btn btn-outline-warning">Babeljs</a>
             </div>
         </div>
 
         <div class="box" id="2">
-            <h2>Day2</h2>
+            <h1>2.Style</h1>
             <div class="left_1"><br>
-                <h6>Data Types :</h6><br><br>
-                <h6 style="color: red">Type Error :</h6>
+                <h6>Add class</h6><br>
+                <p></p>
+                <h6>Add img src</h6><br>
+                <h6>change img to B/W:</h6><br>
+                <h6>escape from eslint</h6>
+                <p></p>
+                <h6>style inline </h6><br>
+                <h6>Custom ADD</h6>
             </div>
             <div class="right_1"><br>
-                <p class="n">String , Integer , Float , Boolean</p>
-                <p> <span class="n">"when a value is not of the expected type. "</span><br><span class="p">no=int(input(" No :")) <br> print("no is " + no) <br></span><span class="o">>></span><span style="color: red">Type Error :</span></p>
+
+                <p>
+                    &#60;h1 <span class="o">className=</span><span class="b">"heading"</span>> Hello Rajesh&#60;/h1>
+                </p>
+                <p>
+                    <span class="o">const </span><span class="b">link=</span><span class="g">"images/rose.png;"</span><br><span class="o">&#60;img src=</span><span class="b">{link}</span>>
+                </p><br>
+                <p class="o">src={img+"<span class="g"> ?grayscale" </span>} /></p><br>
+                <p><span class="b">"a problem shows in console"</span>
+                    ADD <span class="o">alt=""</span>
+                </p>
+                <p class="o">style=<span class="b">{ { color : " red " } } </span></p>
+                <p>
+                    <span class="o">const </span><span class="b">Customstyle=</span>{ <br>
+                    &emsp;color: <span class="g">"red".</span><br>
+                    &emsp;fontSize: <span class="g">"20px".</span><br>
+                    };<br>
+                    <span class="o">Customstyle.color=</span><span class="g">"blue";</span><br>
+                    <span class="o">&#60;h1 style=<span class="b">{Customstyle}</span>></span> Hello world &#60;/h1>
+
+                </p>
             </div>
             <div class="footer"></div>
         </div>
         <div class="box" id="3">
-            <h1>Day3</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
+            <h1>3.Components</h1>
+            <div class="left_1">
+                <h6>Function</h6><br><br><br><br><br><br><br>
+                <p></p>
+                <h6>Export</h6>
+            </div>
+            <div class="right_1">
+                <p class="o">function <span class="g">Heading()</span>{<br> &emsp;<span class="g">return </span>&#60;div><br> &emsp; &emsp;&#60;h1>Hello Rajesh &#60;/h1><br> &emsp; &emsp;&#60;p>a web developer&#60;/p><br> &emsp;&#60;/div><br>};</p>
+                <p class="o scrolling">ReactDom.render(<span class="g">&#60; Heading /></span>
+                    , document. getElementById("root"));</p>
+                <hr>
+                <div class="b">&nbsp; Create new file "Heading.jsx" inside :</div>
+                <p class="o">import React from "react" </p>
+                <p class="o">function <span class="g">Heading()</span>{<br> &emsp;<span class="g">return </span>&#60;div><br> &emsp; &emsp;&#60;h1>Hello Rajesh &#60;/h1><br> &emsp; &emsp;&#60;p>a web developer&#60;/p><br> &emsp;&#60;/div><br>};</p>
+                <p class="o">export default<span class="g"> Heading;</span></p>
+            </div>
+            <div class="footer"></div>
+        </div>
+        <div class="box" id="3.1">
+            <h1>3.1</h1>
+            <div class="left_1">
+                <h6>Import</h6><br><br><br><br><br><br><br><br>
+                <h6>import , export multiple funtion</h6>
+            </div>
+            <div class="right_1">
+                <p class="b">Now in "app.js" import the function</p>
+                <p class="o scrolling">import <span class="g">Heading</span> from <span class="g"> "./Heading.jsx"</span></p>
+                <p class="o ">ReactDom.render( <br><span class="g">&emsp;&emsp;&#60; Heading /> ,<br></span>
+                    &emsp;&emsp;document.<br>&emsp;&emsp; getElementById("root"));</p>
+                <hr>
+                <p class="o">const <span class="g">pi</span>=3.1415;<br>function <span class="g">doublepi()</span>{<br>&emsp;&emsp;return pi * 2;<br> } <br>function <span class="g">triple(x)</span> { <br>return pi * x; <br>} <br> export default <span class="g"> pi </span>; <br>export <span class="g">{ doublepi,triplepi } ;</span></p>
+                <hr>
+                <p class="o scrolling">import <span class="g">pi</span> , <span class="g">{doublepi,triplepi} </span></p><span class="b" style="margin-left:8px">To use</span>
+                <p class="o scrolling">&#60;h1> values : <span class="g">{pi} </span>, <span class="g">{doublepi()} </span>, <span class="g">{triplepi(3)}</span>&#60;/h1></p>
+
+            </div>
             <div class="footer"></div>
         </div>
         <div class="box" id="4">
-            <h1>Day4</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
+            <h1>
+                4.Setup</h1>
+            <div class="left_1"><br>
+                <h6>1.Check Node is up to date</h6><br><br>
+                <h6>2.Install VS code </h6><br><br><br><br><br>
+                <h6>3.Create React App</h6>
+            </div>
+            <div class="right_1"><br>
+                <ul class="b">
+                    <li>
+                        <a href="https://nodejs.org/en/" class="btn btn-sm btn-primary">In node page</a>
+                    </li>
+                    <li>
+                        <p class="b">In comand prompt : <span class="g">node --version</span></p>
+
+                    </li>
+                </ul>
+                <hr>
+                <ul class="b">
+                    <li><a href="https://code.visualstudio.com/" class="btn btn-sm btn-primary">Vs code</a></li>
+                    <li>
+                        <p class="b">Add Extensions :</p>
+                    </li>
+                </ul>
+                <p class="b"><span class="g"> vscode-language-babel </span> -search in vs code extension. <br>
+                    <span class="g">vscode icons </span> - Icons for file
+                </p>
+                <hr>
+                <p class="
+                   o">npx create-react-app my-app <br>
+                    cd my-app <br><span class="b">"if can't able to install"</span>
+                <br>npm install create-react-app <br>
+                    npx create-react-app my-app <br>
+                    cd my-app <br>
+                    npm start </p>
+                <a href="https://reactjs.org/docs/create-a-new-react-app.html" class="btn btn-sm btn-primary ml-2">Detail doc</a>
+            </div>
             <div class="footer"></div>
         </div>
         <div class="box" id="5">
-            <h1>Day5</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="6">
-            <h1>Day6</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="7">
-            <h1>Day7</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="8">
-            <h1>Day8</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="9">
-            <h1>Day9</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="10">
-            <h1>Day10</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="11">
-            <h1>Day11</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="12">
-            <h1>Day12</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="13">
-            <h1>Day13</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="14">
-            <h1>Day14</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="15">
-            <h1>Day15</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="16">
-            <h1>Day16</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="17">
-            <h1>Day17</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="18">
-            <h1>Day18</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="19">
-            <h1>Day19</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="20">
-            <h1>Day20</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="21">
-            <h1>Day21</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="22">
-            <h1>Day22</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="23">
-            <h1>Day23</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="24">
-            <h1>Day24</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="25">
-            <h1>Day25</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="26">
-            <h1>Day26</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="27">
-            <h1>Day27</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="28">
-            <h1>Day28</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="29">
-            <h1>Day29</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
-        </div>
-        <div class="box" id="30">
-            <h1>Day30</h1>
+            <h1>5</h1>
             <div class="left_1"></div>
             <div class="right_1"></div>
             <div class="footer"></div>
         </div>
 
     </div>
-    <div class="left">
-        <a href="#1" class="btn btn-outline-dark bg-dark text-light w">day1</a>
-        <a href="#2" class="btn btn-outline-dark bg-dark text-light w">day2</a>
-        <a href="#3" class="btn btn-outline-dark bg-dark text-light w">day3</a>
-        <a href="#4" class="btn btn-outline-dark bg-dark text-light w">day4</a>
-        <a href="#5" class="btn btn-outline-dark bg-dark text-light w">day5</a>
-        <a href="#6" class="btn btn-outline-dark bg-dark text-light w">day6</a>
-        <a href="#7" class="btn btn-outline-dark bg-dark text-light w">day7</a>
-        <a href="#8" class="btn btn-outline-dark bg-dark text-light w">day8</a>
-        <a href="#9" class="btn btn-outline-dark bg-dark text-light w">day9</a>
-        <a href="#10" class="btn btn-outline-dark bg-dark text-light ">day10</a>
-        <a href="#11" class="btn btn-outline-dark bg-dark text-light ">day11</a>
-        <a href="#12" class="btn btn-outline-dark bg-dark text-light ">day12</a>
-        <a href="#13" class="btn btn-outline-dark bg-dark text-light ">day13</a>
-        <a href="#14" class="btn btn-outline-dark bg-dark text-light ">day14</a>
-        <a href="#15" class="btn btn-outline-dark bg-dark text-light ">day15</a>
-        <a href="#16" class="btn btn-outline-dark bg-dark text-light ">day16</a>
-        <a href="#17" class="btn btn-outline-dark bg-dark text-light ">day17</a>
-        <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
-
-        <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
-        <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
-        <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
-        <a href="#18" class="btn btn-outline-dark bg-dark text-light ">day18</a>
+    <div class="scrollmenu">
+        <a href="#1" class="btn btn-dark">1</a>
+        <a href="#2" class="btn btn-dark">2</a>
+        <a href="#3" class="btn btn-dark">3</a>
+        <a href="#3.1" class="btn btn-dark">3.1</a>
+        <a href="#4" class="btn btn-dark">4</a>
+        <a href="#5" class="btn btn-dark">5</a>
+        <a href="#6" class="btn btn-dark">6</a>
+        <a href="#7" class="btn btn-dark">7</a>
+        <a href="#8" class="btn btn-dark">8</a>
+        <a href="#9" class="btn btn-dark">9</a>
+        <a href="#10" class="btn btn-dark">10</a>
+        <a href="#11" class="btn btn-dark">11</a>
+        <a href="#12" class="btn btn-dark">12</a>
+        <a href="#13" class="btn btn-dark">13</a>
+        <a href="#14" class="btn btn-dark">14</a>
+        <a href="#15" class="btn btn-dark">15</a>
+        <a href="#16" class="btn btn-dark">16</a>
+        <a href="#17" class="btn btn-dark">17</a>
+        <a href="#18" class="btn btn-dark">18</a>
+        <a href="#19" class="btn btn-dark">19</a>
+        <a href="#20" class="btn btn-dark">20</a>
     </div>
-    <a href="#top" class="btn btn-primary" id="backtotop">To top</a>
-
-
-
-</body></html> 
-    
+</body></html>
