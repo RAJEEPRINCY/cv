@@ -164,16 +164,20 @@
                 <h6>Intro :</h6><br>
                 <p></p>
                 <h6>Code sandbox</h6><br>
-                <h6>h1</h6><br><br><br>
+                <h6>h1</h6>
+                <p class="small o">(Scroll)</p><br>
                 <p></p>
-                <h6>Multiple Tag</h6><br><br><br>
-                <h6>Adding:</h6><br><br>
-                <h6>Also can do this</h6>
+                <h6>Multiple Tag</h6>
+                <p class="small o">(Scroll)</p><br><br>
+                <h6>Adding:</h6>
+                <p class="small o">(Scroll)</p><br>
+                <h6>Also can do this <span class="small o">(Scroll)</span></h6>
             </div>
             <div class="right_1"><br>
                 <p class="b">A javascript library for building user interface </p>
+                <hr>
                 <p class="b">Online IDE for React</p>
-                <br>
+                <hr>
                 <div class="scrolling">
                     <p class="o" style="text-align: left;">
                         import <span class="g">React</span> from <span class="g">"react"</span> <br>
@@ -182,19 +186,20 @@
                     <p style="text-align: left;" class="o">ReactDom.render(<span class="g">&#60;h1>Hello world!&#60;/h1></span>,<span>document. getElementById( <span class="g">"root"</span> )</span>);
                     </p>
                 </div>
-                <p></p>
+                <hr>
                 <div class="scrolling">
                     <p style="text-align: left;" class="o">ReactDom.render(&#60;div> <br>
                         &emsp;<span class="g">&#60;h1>Hello world&#60;/h1></span> <br>
                         &emsp;<span class="g">&#60;p>Some text&#60;/p>&#60;/div></span> <br>
                         ,<span>document. getElementById( <span class="g">"root"</span> )</span>);</p>
                 </div>
-                <p></p>
+                <hr>
                 <p style="text-align: left;" class="scrolling">
                     <span class="o">const <span class="b">name</span></span><span class="o">=</span><span class="g">"Rajesh";</span><br>
                     <span class="o">ReactDom.render(<span class="g">&#60;h1>Hello <span class="b">{name}</span>!&#60;/h1></span>,<span>document. getElementById( <span class="g">"root"</span> )</span>);
                     </span>
-                </p><br>
+                </p>
+                <hr>
                 <div class="scrolling">
                     <p><span class="b">&#60;h1>Your Id : { <span class="g"><span class="o">Math.</span><span class="g">floor</span>(<span class="o">Math.</span><span class="g">random</span><span class="b">*</span><span class="o">10</span>)</span> }!&#60;/h1></span>,<span>document. getElementById( <span class="b">"root"</span> )</span>);</p>
                 </div>
@@ -214,30 +219,36 @@
                 <h6>Add img src</h6><br>
                 <h6>change img to B/W:</h6><br>
                 <h6>escape from eslint</h6>
-                <p></p>
+                <br>
                 <h6>style inline </h6><br>
                 <h6>Custom ADD</h6>
             </div>
-            <div class="right_1"><br>
+            <div class="right_1">
 
-                <p>
-                    &#60;h1 <span class="o">className=</span><span class="b">"heading"</span>> Hello Rajesh&#60;/h1>
+                <p class="o">
+                    &#60;h1 <span class="g">className="heading"</span>> Hello Rajesh&#60;/h1>
                 </p>
+                <hr>
                 <p>
-                    <span class="o">const </span><span class="b">link=</span><span class="g">"images/rose.png;"</span><br><span class="o">&#60;img src=</span><span class="b">{link}</span>>
-                </p><br>
-                <p class="o">src={img+"<span class="g"> ?grayscale" </span>} /></p><br>
+                    <span class="o">const </span>link=<span class="g">"images/rose.png;"</span><br><span class="o">&#60;img src=</span>{link}
+                    <span class="o">></span>
+                </p>
+                <hr>
+                <p></p>
+                <p></p>
+                <p class="o">src={img+"<span class="g"> ?grayscale" </span>} /></p>
+                <hr>
                 <p><span class="b">"a problem shows in console"</span>
-                    ADD <span class="o">alt=""</span>
-                </p>
-                <p class="o">style=<span class="b">{ { color : " red " } } </span></p>
-                <p>
-                    <span class="o">const </span><span class="b">Customstyle=</span>{ <br>
-                    &emsp;color: <span class="g">"red".</span><br>
-                    &emsp;fontSize: <span class="g">"20px".</span><br>
+                    <span class="o">ADD </span><span class="g">alt=""</span>
+                </p><hr>
+                <p class="o">style=<span class="b">{ { color : " red " } } </span></p><hr>
+                <p class="o">
+                    <span class="o">const </span><span class="g">Customstyle=</span>{ <br>
+                    &emsp;color: "red".<br>
+                    &emsp;fontSize: "20px".<br>
                     };<br>
                     <span class="o">Customstyle.color=</span><span class="g">"blue";</span><br>
-                    <span class="o">&#60;h1 style=<span class="b">{Customstyle}</span>></span> Hello world &#60;/h1>
+                    <span class="o">&#60;h1 style=<span class="g">{Customstyle}</span>></span> Hello world &#60;/h1>
 
                 </p>
             </div>
@@ -246,7 +257,7 @@
         <div class="box" id="3">
             <h1>3.Components</h1>
             <div class="left_1">
-                <h6>Function</h6><br><br><br><br><br><br><br>
+                <h6>Function</h6><p class="small o">(scroll)</p><br><br><br><br><br><br><br>
                 <p></p>
                 <h6>Export</h6>
             </div>
@@ -312,12 +323,13 @@
                 </p>
                 <hr>
                 <p class="
-                   o">npx create-react-app my-app <br>
+                   g">npx create-react-app my-app <br>
                     cd my-app <br><span class="b">"if can't able to install"</span>
-                <br>npm install create-react-app <br>
+                    <br>npm install create-react-app <br>
                     npx create-react-app my-app <br>
                     cd my-app <br>
-                    npm start </p>
+                    npm start
+                </p>
                 <a href="https://reactjs.org/docs/create-a-new-react-app.html" class="btn btn-sm btn-primary ml-2">Detail doc</a>
             </div>
             <div class="footer"></div>
