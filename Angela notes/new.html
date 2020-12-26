@@ -9,11 +9,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        * {
 
-            text-align: center
-        }
+    <style>
+        
 
         body {
             background-color:#343a40;
@@ -61,15 +59,15 @@
             color: white;
             text-shadow: 2px 2px 4px #000000;
         }
-        .n {
-            color:#1e96fc
+        .b {
+            color:#1e96fc;
         }
-        .p {
-            color:#ffa200;
+        .g {
+            color:#00ff00;
         }
 
         .o {
-            color: #00ff00;
+            color:#ffa200;
         }
 
         
@@ -99,6 +97,7 @@
             height: 50px;
             position: absolute;
             bottom: 1px;
+            padding-top:5px;
         }
 
         .footer:hover,
@@ -113,6 +112,7 @@
             width: 60%;
             height: 600px;
             margin-right: 10px;
+            padding:10px
         }
 
         .left_1 {
@@ -121,6 +121,7 @@
             width: 30%;
             height: 600px;
             margin-left: 10px;
+            text-align:center;
         }
 
         .little {
@@ -138,14 +139,27 @@
             width: 35%;
             margin-top: 10px;
         }
+        hr{
+            margin:5px;
+            border-color:white;
+        }
+        h2{
+            text-align: center
+        }
+        .p{
+            color:#cc02db;
+        }
+        .w{
+            color: white
+        }
     </style>
 </head>
 
 <body>
 
     <div class="right">
-        <div class="display-2" id="top">100 days</div>
-        <p class="lead">- Angela Yu</p>
+        <div class="display-2 text-center" id="top">100 days</div>
+        <p class="lead text-center">- Angela Yu</p>
         <!--        .box#$*30>h1{Day$}-->
         <div class="box" id="1">
             <h2>Day1</h2>
@@ -160,15 +174,15 @@
                 <br>
                 <h6>Variables Naming</h6>
             </div>
-            <div class="right_1"><br>
-                <p class="p">print("Print something")<br><span class="o">>Print something></span></p>
-                <p class="n">"String manipulation (or string handling) is the process of <b>changing, parsing, splicing, pasting, or analyzing</b> strings"</p>
-                <p class="p">print("Hello" + "Rajesh")<br><span class="o">>>Hello Rajesh</span></p>
+            <div class="right_1">
+                <p class="o">print("Print something")<br><span class="g">>Print something></span></p>
+                <p class="b">"String manipulation (or string handling) is the process of <b>changing, parsing, splicing, pasting, or analyzing</b> strings"</p>
+                <p class="o">print("Hello" + "Rajesh")<br><span class="g">>>Hello Rajesh</span></p>
                 <div class="little"></div>
-                <p class="p">input("Enter your name") <br><span class="o">>>Enter your name</span></p>
-                <p class="p">name=input("Your name") <br><span class="o">>>Your name Rajesh </span><br>print(name) <br><spean class="o">>>Rajesh</spean></p>
-                <p class="n"><b>Use only: </b>A-z, 0-9, _ </p>
-                <p class="n"><b>Don't Use : </b>(!@#$%^&*?>&#60;)) </p>
+                <p class="o">input("Enter your name") <br><span class="g">>>Enter your name</span></p>
+                <p class="o">name=input("Your name") <br><span class="g">>>Your name Rajesh </span><br>print(name) <br><spean class="g">>>Rajesh</spean></p>
+                <p class="b"><b>Use only: </b>A-z, 0-9, _ </p>
+                <p class="b"><b>Don't Use : </b>(!@#$%^&*?>&#60;)) </p>
             </div>
             <div class="footer">
                 <div class="footer-left">
@@ -188,8 +202,8 @@
                 <h6 style="color: red">Type Error :</h6>
             </div>
             <div class="right_1"><br>
-                <p class="n">String , Integer , Float , Boolean</p>
-                <p> <span class="n">"when a value is not of the expected type. "</span><br><span class="p">no=int(input(" No :")) <br> print("no is " + no) <br></span><span class="o">>></span><span style="color: red">Type Error :</span></p>
+                <p class="b">String , Integer , Float , Boolean</p>
+                <p> <span class="b">"when a value is not of the expected type. "</span><br><span class="o">no=int(input(" No :")) <br> print("no is " + no) <br></span><span class="g">>></span><span style="color: red">Type Error :</span></p>
             </div>
             <div class="footer"></div>
         </div>
@@ -281,19 +295,47 @@
                 <br><h6>Methods</h6>
             </div>
             <div class="right_1">
-                <div class="n">Object oriented programming is splitting biggest task into smaller </div><br>
-                <p class="p">car = carblueprin()</p>
-                <p class="n">(object = Class())</p>
+                <div class="b">Object oriented programming is splitting biggest task into smaller </div><br>
+                <p class="o">car = carblueprin()</p>
+                <p class="b">(object = Class())</p>
                 <a href="images/16-1.PNG" class="btn btn-sm btn-outline-primary">Img</a><br><br>
-                <p class="p">car.speed <br><span class="n">object.attribute</span></p><p class="p">car.make() <br><span class="n">object.methods()</span></p>
+                <p class="o">car.speed <br><span class="b">object.attribute</span></p><p class="o">car.make() <br><span class="b">object.methods()</span></p>
             </div>
             <div class="footer"></div>
         </div>
         <div class="box" id="17">
-            <h1>Day17</h1>
-            <div class="left_1"></div>
-            <div class="right_1"></div>
-            <div class="footer"></div>
+            <h2>Day17-OPPS</h2>
+            <div class="left_1"><p></p>
+                <h6>Creating class</h6><br><br><br><h6>Naming of class</h6>
+                <br><br><h6>Initializing</h6><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br><h6>Methods</h6>
+            </div>
+            <div class="right_1">
+                <p class="o">class <span class="g">Car()</span>: <br>&emsp; pass <br> vehicle=<span class="g">Car()</span></p>
+                <hr>
+                <ul>
+                    <li class="b"><span class="g">P</span >ascal<span class="g">C</span >ase</li>
+                    <li class="b">camel<span class="g">C</span >ase</li>
+                    <li class="b">snake<span class="g">_</span >case</li>
+                </ul>
+                <hr>
+                <p class="o">
+                    class car( ): <br>&emsp;def <span class="g"> __ init__( <span class="p">self  ,</span><span class="w">seats </span>) </span>: <br>&emsp;&emsp;&emsp;<span class="p">self.seat=</span><span class="w">seats</span><br>
+                    &emsp;def <span class="o">change_seat(<span class="w"> seats </span>)</span>:<br>&emsp;&emsp;&emsp;<span class="p">self.seat=</span><span class="w">seats</span><br>&emsp;&emsp;&emsp;print("seat change")
+                    <br>my car = car(<span class="o">5</span>)   
+                </p><hr>
+                <p class="o">my car . <span class="g">change_seat( ) </span> <br><span class="b">>> seat changed
+                </span></p>
+            </div>
+            <div class="footer">
+               <a href="" class="btn btn-outline-warning">Quiz project</a>
+                <a href="https://opentdb.com/api_config.php" class="btn btn-outline-warning">Trivia</a>
+            </div>
         </div>
         <div class="box" id="18">
             <h1>Day18</h1>
@@ -330,7 +372,7 @@
             <div class="left_1"></div>
             <div class="right_1"></div>
             <div class="footer"></div>
-        </div>
+        </div>    
         <div class="box" id="24">
             <h1>Day24</h1>
             <div class="left_1"></div>
