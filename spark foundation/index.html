@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spark foundation test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/db06b2f9eb.js"></script>
+</head>
+
+<body>
+    <div class="left-screen">
+        <div class="box">
+            <img src="images/logo.PNG" alt="">
+        </div>
+        <div class="box-1">
+            <a href="#" class="text-center">
+                <i class="fa fa-user fa-3x "></i>
+                <p>Students</p>
+            </a>
+        </div>
+        <div class="box-2">
+            <a href="#" class="text-center">
+                <i class="fa fa-book fa-3x"></i>
+                <p>Lesson Plan</p>
+            </a>
+        </div>
+        <div class="box-3">
+            <a href="#" class="text-center">
+                <span><i class="fa fa-cog fa-3x"></i></span>
+                <p>Settings</p>
+            </a>
+        </div>
+    </div>
+    <div class="right-screen">
+        <div class="top"></div>
+        <div class="bottom">
+            <a href="#">Videos</a><br>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Insert URL here">
+            </div>
+            <p>or</p>
+            <form>
+                <p><button id="upload_button">Upload</button></p>
+                <p><input id="upload_input" name="your_name" type="file" /></p>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var button = document.getElementById('upload_button');
+        var input = document.getElementById('upload_input');
+
+        input.style.display = 'none';
+        button.style.display = 'initial';
+
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            input.click();
+        });
+
+        input.addEventListener('change', function() {
+            button.innerText = this.value;
+        });
+    </script>
+</body></html>
